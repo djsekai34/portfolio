@@ -17,15 +17,15 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
-                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#lenguajes" onclick="seleccionar()">LENGUAJES</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrar0ocultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -40,9 +40,9 @@
             <h1>David Jiménez</h1>
             <h2>Desarrollador Web Junior</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-solid fa-envelope"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/david-jimenez-villena/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:davidjimenezvillena@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/djsekai34" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </section>
@@ -51,8 +51,10 @@
     <section id="sobremi" class="sobremi">
         <div class="cotenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Hola, soy David Jiménez Villena.</span> Acabo de terminar mis estudios de grado superior en desarrollo de aplicaciones web, tengo 21 años y estoy en busca de un nuevo trabajo que desarrolle mis habilidades 
-            adqueridas mendiante mis estudios, soy una persona sociable que le gusta el trabajo en equipo con una gran simpatia y que le gusta los retos</p>
+            <p><span>Hola, soy David Jiménez Villena.</span> Acabo de terminar mis estudios de grado superior en desarrollo de aplicaciones web. 
+                Tengo 21 años y estoy en busca de un nuevo trabajo que desarrolle mis habilidades adquiridas mediante mis estudios. 
+                Soy una persona sociable a la que le gusta el trabajo en equipo, con una gran simpatía y que disfruta de los retos.</p>
+
 
             <div class="fila">
                 <!--Datos personales-->
@@ -114,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <button>
+            <button id="descargarCV">
                 Descargar CV <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </button>
@@ -307,9 +309,159 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="item der">
+                        <h4>Ayudante de camarero</h4>
+                        <span class="casa">Els Pescadors (Pineda de mar)</span>
+                        <span class="fecha">06/2021 - 08/2021</span>
+                        <p>Desempeñé el rol de ayudante de camarero en un chiringuito ubicado en la playa, donde adquirí habilidades en la gestión de clientes,
+                             interactuando con personas de diferentes nacionalidades. Mejoré significativamente mi capacidad para comunicarme en público y 
+                             brindar un excelente servicio al cliente. Además, perfeccioné mi comunicación en inglés, 
+                             lo que me permitió interactuar de manera efectiva con clientes internacionales. 
+                             Disfruté de un ambiente laboral positivo en el que todos apreciaban mi trabajo y contribución al equipo.</p>
+                        <div class="conectord">
+                            <div class="circulod">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!--Seccion porfolio-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto" id="TFGRestaurante">
+                    <img src="img/TFG Restaurante.png" alt="">
+                    <div class="overlay">
+                        <h3>TFG Restaurante</h3>
+                        <p>Proyecto fin de grado sobre un restaurante</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Construccion.png" alt="">
+                    <div class="overlay">
+                        <h3>En Construccion</h3>
+                        <p>Proyectos en construccion</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Construccion.png" alt="">
+                    <div class="overlay">
+                        <h3>En Construccion</h3>
+                        <p>Proyectos en construccion</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Construccion.png" alt="">
+                    <div class="overlay">
+                        <h3>En Construccion</h3>
+                        <p>Proyectos en construccion</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Construccion.png" alt="">
+                    <div class="overlay">
+                        <h3>En Construccion</h3>
+                        <p>Proyectos en construccion</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Construccion.png" alt="">
+                    <div class="overlay">
+                        <h3>En Construccion</h3>
+                        <p>Proyectos en construccion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion lenguajes que se usar-->
+    <section id="lenguajes" class="lenguajes">
+        <div class="contenido-seccion-lenguajes">
+            <h2>Lenguajes</h2>
+            <div class="galeria">
+                <div class="lenguaje" id="php">
+                    <img src="img/Logophp.png" alt="">
+                    <div class="overlay">
+                        <h3>PHP</h3>
+                    </div>
+                </div>
+                <div class="lenguaje">
+                    <img src="img/java.png" alt="java">
+                    <div class="overlay">
+                        <h3>Java</h3>
+                    </div>
+                </div>
+                <div class="lenguaje">
+                    <img src="img/js.png" alt="js">
+                    <div class="overlay">
+                        <h3>Javascript</h3>
+                    </div>
+                </div>
+                <div class="lenguaje">
+                    <img src="img/html5.png" alt="html5 y html">
+                    <div class="overlay">
+                        <h3>HTML y HTML5</h3>
+                    </div>
+                </div>
+                
+                <div class="lenguaje">
+                    <img src="img/Css.png" alt="css">
+                    <div class="overlay">
+                        <h3>Css</h3>
+                    </div>
+                </div>
+
+
+                <div class="lenguaje">
+                    <img src="img/Python.png" alt="python">
+                    <div class="overlay">
+                        <h3>Python</h3>
+                    </div>
+                </div>
+
+                <div class="lenguaje">
+                    <img src="img/Mysql.png" alt="Mysql">
+                    <div class="overlay">
+                        <h3>MYSQL</h3>
+                    </div>
+                </div>
+                <div class="lenguaje">
+                    <img src="img/powerbi.png" alt="powerbi">
+                    <div class="overlay">
+                        <h3>Power Bi</h3>
+                    </div>
+                </div>
+
+                <div class="lenguaje">
+                    <img src="img/azure.png" alt="azure">
+                    <div class="overlay">
+                        <h3>Microsoft Azure</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/david-jimenez-villena/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:davidjimenezvillena@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/djsekai34" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
