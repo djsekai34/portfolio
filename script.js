@@ -55,3 +55,9 @@ document.getElementById('descargarCV').addEventListener('click', function() {
     link.click(); 
     document.body.removeChild(link);
 });
+
+
+// Abrir el tfg en el github
+document.getElementById('TFGRestaurante').addEventListener('click', function() { 
+    window.open('https://github.com/djsekai34/Proyecto-TFG-Restaurante', '_blank');
+});
