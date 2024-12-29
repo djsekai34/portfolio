@@ -61,3 +61,8 @@ document.getElementById('descargarCV').addEventListener('click', function() {
 document.getElementById('TFGRestaurante').addEventListener('click', function() { 
     window.open('https://github.com/djsekai34/Proyecto-TFG-Restaurante', '_blank');
 });
+
+
+document.getElementById('cifradoCesar').addEventListener('click', function() { 
+    window.open('https://djsekai34.github.io/CifradoCesar/', '_blank');
+});
