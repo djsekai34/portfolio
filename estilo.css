@@ -491,6 +491,16 @@ html{
     line-height: 24px;
     color: #FF5733;
 }
+
+.curriculum .fila .item .certificados a{
+    color: #3498db; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.curriculum .fila .item .certificados a:hover {
+    color: #2ecc71; 
+    text-decoration: underline;
+  }
 .curriculum .fila .izq{
     border-right: 2px solid #1CB698;
     margin-right: 20px;
